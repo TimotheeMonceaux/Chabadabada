@@ -6,6 +6,7 @@ import android.os.Handler
 import android.util.Log
 import android.view.View
 import kotlinx.android.synthetic.main.activity_home_page.*
+import java.util.*
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -39,7 +40,24 @@ class HomePageActivity : AppCompatActivity() {
      * system UI. This is to prevent the jarring behavior of controls going away
      * while interacting with activity UI.
      */
+
+    private val possibleValues: List<String> = listOf(
+            "AMOUR",
+            "PASSION",
+            "COULEUR",
+            "NUIT",
+            "JOUR",
+            "MINUIT",
+            "SOLEIL",
+            "CIEL"
+    )
+
+    private fun getValue(): String {
+        return possibleValues.get(Random().nextInt(possibleValues.size))
+    }
+
     private val mDelayHideTouchListener = View.OnTouchListener { _, _ ->
+        text_button.text = getValue()
         if (AUTO_HIDE) {
             delayedHide(AUTO_HIDE_DELAY_MILLIS)
         }

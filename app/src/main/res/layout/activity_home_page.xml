@@ -38,6 +38,12 @@
             tools:ignore="UselessParent">
 
             <Button
+                android:id="@+id/text_button"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
                 android:id="@+id/dummy_button"
                 style="?metaButtonBarButtonStyle"
                 android:layout_width="match_parent"
