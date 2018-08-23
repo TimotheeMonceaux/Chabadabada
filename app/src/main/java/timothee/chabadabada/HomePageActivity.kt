@@ -3,6 +3,7 @@ package timothee.chabadabada
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.util.Log
 import android.view.View
 import kotlinx.android.synthetic.main.activity_home_page.*
 
@@ -94,7 +95,7 @@ class HomePageActivity : AppCompatActivity() {
         // Show the system bar
         fullscreen_content.systemUiVisibility =
                 View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or
-                        View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
         mVisible = true
 
         // Schedule a runnable to display UI elements after a delay
