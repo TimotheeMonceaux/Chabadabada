@@ -10,12 +10,6 @@ import java.util.*
 
 
 class HomeActivity : AppCompatActivity() {
-    private val startButtonTouchListener = View.OnTouchListener { _, event ->
-        if (event.action == MotionEvent.ACTION_UP)
-            startActivity(Intent(this, MainActivity::class.java))
-        false
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -23,7 +17,20 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
         supportActionBar?.hide()
 
-        // Map the listener to the Start Button
+        // Map the listeners to the  Buttons
         home_start_button.setOnTouchListener(startButtonTouchListener)
+        home_quit_button.setOnTouchListener(quitButtonTouchListener)
+    }
+
+    private val startButtonTouchListener = View.OnTouchListener { _, event ->
+        if (event.action == MotionEvent.ACTION_UP)
+            startActivity(Intent(this, MainActivity::class.java))
+        false
+    }
+
+    private val quitButtonTouchListener = View.OnTouchListener { _, event ->
+        if (event.action == MotionEvent.ACTION_UP)
+            finishAndRemoveTask()
+        false
     }
 }
