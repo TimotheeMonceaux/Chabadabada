@@ -10,13 +10,8 @@ import java.util.*
 
 
 class HomeActivity : AppCompatActivity() {
-    private fun getValue(): String {
-        return possibleValues.get(Random().nextInt(possibleValues.size))
-    }
-
-    private val startButtonTouchListener = View.OnTouchListener { _, e ->
-        //home_start_button.text = getValue()
-        if (e.action == MotionEvent.ACTION_UP)
+    private val startButtonTouchListener = View.OnTouchListener { _, event ->
+        if (event.action == MotionEvent.ACTION_UP)
             startActivity(Intent(this, MainActivity::class.java))
         false
     }
@@ -30,18 +25,5 @@ class HomeActivity : AppCompatActivity() {
 
         // Map the listener to the Start Button
         home_start_button.setOnTouchListener(startButtonTouchListener)
-    }
-
-    companion object {
-        private val possibleValues: List<String> = listOf(
-                "AMOUR",
-                "PASSION",
-                "COULEUR",
-                "NUIT",
-                "JOUR",
-                "MINUIT",
-                "SOLEIL",
-                "CIEL"
-        )
     }
 }

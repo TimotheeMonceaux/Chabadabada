@@ -10,7 +10,7 @@
          is needed to present your content, e.g. VideoView, SurfaceView,
          TextureView, etc. -->
     <TextView
-        android:id="@+id/home_fullscreen_content"
+        android:id="@+id/home_background_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
