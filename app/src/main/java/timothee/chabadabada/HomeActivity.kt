@@ -2,9 +2,8 @@ package timothee.chabadabada
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.view.View
-import kotlinx.android.synthetic.main.activity_home_page.*
+import kotlinx.android.synthetic.main.activity_home.*
 import java.util.*
 
 /**
@@ -16,7 +15,7 @@ class HomeActivity : AppCompatActivity() {
         return possibleValues.get(Random().nextInt(possibleValues.size))
     }
 
-    private val mDelayHideTouchListener = View.OnTouchListener { _, _ ->
+    private val startButtonTouchListener = View.OnTouchListener { _, _ ->
         home_text_button.text = getValue()
         false
     }
@@ -24,25 +23,14 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_home_page)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
-        // Upon interacting with UI controls, delay any scheduled hide()
-        // operations to prevent the jarring behavior of controls going away
-        // while interacting with the UI.
-        home_text_button.setOnTouchListener(mDelayHideTouchListener)
-    }
-
-    override fun onPostCreate(savedInstanceState: Bundle?) {
-        super.onPostCreate(savedInstanceState)
+        setContentView(R.layout.activity_home)
         supportActionBar?.hide()
+
+        // Map the listener to the Start Button
+        home_text_button.setOnTouchListener(startButtonTouchListener)
     }
 
     companion object {
-        /**
-         * Whether or not the system UI should be auto-hidden after
-         * [AUTO_HIDE_DELAY_MILLIS] milliseconds.
-         */
         private val possibleValues: List<String> = listOf(
                 "AMOUR",
                 "PASSION",
