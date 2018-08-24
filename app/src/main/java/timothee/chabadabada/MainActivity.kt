@@ -15,24 +15,64 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         supportActionBar?.hide()
 
-        main_background_text.text = getValue()
+        main_first_card_text.text = getValue()
+        main_second_card_text.text = getValue()
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
-        if (event != null && event.action == MotionEvent.ACTION_UP) main_background_text.text = getValue()
+        if (event != null && event.action == MotionEvent.ACTION_UP) {
+            main_first_card_text.text = getValue()
+            main_second_card_text.text = getValue()
+        }
         return true
     }
 
     companion object {
         private val possibleValues: List<String> = listOf(
+                "FAUT",
                 "AMOUR",
-                "PASSION",
-                "COULEUR",
+                "TEMPS",
+                "SEXE",
+                "VOLE",
+                "SAIS",
+                "FAIRE",
+                "DANSE",
+                "PAPA",
+                "DIRE",
+                "COEUR",
+                "TOMBER",
+                "BEAU",
+                "POURQUOI",
                 "NUIT",
+                "VEUX",
+                "AIME",
                 "JOUR",
-                "MINUIT",
-                "SOLEIL",
-                "CIEL"
+                "DANSER",
+                "LAISSE",
+                "MOTS",
+                "MONDE",
+                "SOIR",
+                "VIENS",
+                "PEUX",
+                "LOUP",
+                "PEUR",
+                "CIEL",
+                "VENT",
+                "LAID",
+                "DINGUE",
+                "VAIS",
+                "BRAS",
+                "FOND",
+                "SILENCE",
+                "AIMER",
+                "GENS",
+                "CROIS",
+                "HAUT",
+                "APPELLE",
+                "VOIR",
+                "ENTENDS",
+                "GRAND",
+                "TOP"
         )
 
         private fun getValue(): String {

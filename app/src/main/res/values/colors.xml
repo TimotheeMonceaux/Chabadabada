@@ -2,5 +2,8 @@
 <resources>
     <color name="colorPrimary">#555555</color>
     <color name="colorPrimaryDark">#222222</color>
-    <color name="colorAccent">#CCCCCC</color>
+    <color name="colorAccent">#DDDDDD</color>
+
+    <color name="colorFirstCard">#333333</color>
+    <color name="colorSecondCard">#CCCCCC</color>
 </resources>
