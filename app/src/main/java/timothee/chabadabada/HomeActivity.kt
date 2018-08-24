@@ -1,7 +1,9 @@
 package timothee.chabadabada
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MotionEvent
 import android.view.View
 import kotlinx.android.synthetic.main.activity_home.*
 import java.util.*
@@ -12,8 +14,10 @@ class HomeActivity : AppCompatActivity() {
         return possibleValues.get(Random().nextInt(possibleValues.size))
     }
 
-    private val startButtonTouchListener = View.OnTouchListener { _, _ ->
-        home_start_button.text = getValue()
+    private val startButtonTouchListener = View.OnTouchListener { _, e ->
+        //home_start_button.text = getValue()
+        if (e.action == MotionEvent.ACTION_UP)
+            startActivity(Intent(this, MainActivity::class.java))
         false
     }
 
