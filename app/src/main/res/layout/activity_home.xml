@@ -24,7 +24,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        android:padding="50dp">
 
         <Button
             android:id="@+id/home_start_button"
@@ -33,7 +34,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="350dp"
             android:text="@string/home_start_button"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:background="@drawable/home_button_border"
+            android:padding="5dp"/>
 
     </LinearLayout>
 </FrameLayout>

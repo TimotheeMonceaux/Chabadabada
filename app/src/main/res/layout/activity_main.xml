@@ -1,71 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/colorPrimaryDark"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/main_background_text"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:keepScreenOn="true"
-        android:text="@string/home_background_text"
-        android:textColor="@color/colorPrimary"
-        android:textSize="50sp"
-        android:textStyle="bold" />
+    android:weightSum="2"
+    android:gravity="center"
+    android:padding="25dp">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="2"
-        android:gravity="center"
-        android:layout_margin="25dp">
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center">
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <TextView
+            android:id="@+id/main_first_card_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:gravity="center">
+            android:gravity="center"
+            android:keepScreenOn="true"
+            android:background="@color/colorFirstCard"
+            android:text="@string/home_background_text"
+            android:textColor="@color/colorSecondCard"
+            android:textSize="50sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/main_first_card_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:keepScreenOn="true"
-                android:background="@color/colorFirstCard"
-                android:text="@string/home_background_text"
-                android:textColor="@color/colorSecondCard"
-                android:textSize="50sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:gravity="center">
-
-            <TextView
-                android:id="@+id/main_second_card_text"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:keepScreenOn="true"
-                android:background="@color/colorSecondCard"
-                android:text="@string/home_background_text"
-                android:textColor="@color/colorFirstCard"
-                android:textSize="50sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
     </LinearLayout>
 
-</FrameLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/main_second_card_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:keepScreenOn="true"
+            android:background="@color/colorSecondCard"
+            android:text="@string/home_background_text"
+            android:textColor="@color/colorFirstCard"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
