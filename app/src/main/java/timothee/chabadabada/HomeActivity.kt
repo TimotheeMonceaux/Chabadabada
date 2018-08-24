@@ -6,28 +6,26 @@ import android.view.View
 import kotlinx.android.synthetic.main.activity_home.*
 import java.util.*
 
-/**
- * An example full-screen activity that shows and hides the system UI (i.e.
- * status bar and navigation/system bar) with user interaction.
- */
+
 class HomeActivity : AppCompatActivity() {
     private fun getValue(): String {
         return possibleValues.get(Random().nextInt(possibleValues.size))
     }
 
     private val startButtonTouchListener = View.OnTouchListener { _, _ ->
-        home_text_button.text = getValue()
+        home_start_button.text = getValue()
         false
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        // Set the Layout
         setContentView(R.layout.activity_home)
         supportActionBar?.hide()
 
         // Map the listener to the Start Button
-        home_text_button.setOnTouchListener(startButtonTouchListener)
+        home_start_button.setOnTouchListener(startButtonTouchListener)
     }
 
     companion object {
