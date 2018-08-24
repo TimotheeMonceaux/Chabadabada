@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:keepScreenOn="true"
-        android:text="@string/background_text"
+        android:text="@string/home_background_text"
         android:textColor="@color/colorPrimary"
         android:textSize="50sp"
         android:textStyle="bold" />
@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="350dp"
-            android:text="@string/dummy_button"
+            android:text="@string/home_start_button"
             android:textSize="30sp"/>
 
     </LinearLayout>
