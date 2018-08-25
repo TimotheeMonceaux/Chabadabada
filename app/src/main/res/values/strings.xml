@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">Chabadabada</string>
 
+    <!-- SHARED PREFERENCES IDENTIFIERS -->
+    <string name="shared_preferences_settings">timothee.chabadabada.settings</string>
+    <string name="shared_preferences_french">timothee.chabadabada.french</string>
+    <string name="shared_preferences_english">timothee.chabadabada.english</string>
+
+    <!-- HOME ACTIVITY -->
     <string name="home_background_text">CHABADABADA</string>
     <string name="home_start_button">START</string>
     <string name="home_quit_button">QUIT</string>
