@@ -3,6 +3,7 @@
 
     <!-- SHARED PREFERENCES IDENTIFIERS -->
     <string name="shared_preferences_settings">timothee.chabadabada.settings</string>
+    <string name="shared_preferences_settings_number_of_rounds">timothee.chabadabada.settings.number.of.rounds</string>
     <string name="shared_preferences_french">timothee.chabadabada.french</string>
     <string name="shared_preferences_english">timothee.chabadabada.english</string>
 
