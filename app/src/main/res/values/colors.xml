@@ -3,6 +3,7 @@
     <color name="colorPrimary">#555555</color>
     <color name="colorPrimaryDark">#222222</color>
     <color name="colorAccent">#DDDDDD</color>
+    <color name="blackOverlay">#66000000</color>
 
     <color name="colorFirstCard">#333333</color>
     <color name="colorSecondCard">#CCCCCC</color>

@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
         else {
+            main_turn_counter_text.text = "TURN $turn / $nbTurns"
             main_first_card_text.text = getValue()
             main_second_card_text.text = getValue()
         }
