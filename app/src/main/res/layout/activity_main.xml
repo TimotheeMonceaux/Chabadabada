@@ -80,4 +80,49 @@
             android:textStyle="bold" />
 
     </LinearLayout>
+
+    <!-- Overlay 3 : Hourglass -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30sp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/main_hourglass_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_hourglass"
+            android:padding="10sp"
+            android:background="@color/blackOverlay"/>
+
+    </LinearLayout>
+
+
+    <!-- Overlay 4 : Timer -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30sp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/main_timer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:gravity="center"
+            android:keepScreenOn="true"
+            android:padding="5sp"
+            android:background="@color/blackOverlay"
+            android:text="@string/home_background_text"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 </RelativeLayout>
