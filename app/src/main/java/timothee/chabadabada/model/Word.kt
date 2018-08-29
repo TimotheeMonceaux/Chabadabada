@@ -5,7 +5,7 @@ import android.arch.persistence.room.PrimaryKey
 import timothee.chabadabada.model.interfaces.IDeserializable
 import timothee.chabadabada.model.interfaces.ISerializable
 
-@Entity(tableName = "entities")
+@Entity(tableName = "words")
 class Word(val word: String) : ISerializable {
 
     @PrimaryKey(autoGenerate = true)
