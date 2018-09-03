@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.MotionEvent
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
+import timothee.chabadabada.core.AppDatabase
 import java.util.*
 import kotlin.concurrent.fixedRateTimer
 
@@ -45,8 +46,8 @@ class MainActivity : AppCompatActivity() {
         }
         else {
             main_turn_counter_text.text = "TURN $turn / $nbTurns"
-            main_first_card_text.text = getValue()
-            main_second_card_text.text = getValue()
+            main_first_card_text.text = AppDatabase.getInstance(this)?.getValue()
+            main_second_card_text.text = AppDatabase.getInstance(this)?.getValue()
             main_timer_text.visibility = View.GONE
             main_hourglass_button.visibility = View.VISIBLE
         }
@@ -74,59 +75,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             else runOnUiThread {main_timer_text.text = "${timer/10.0}s LEFT"}
-        }
-    }
-
-    companion object {
-        private val possibleValues: List<String> = listOf(
-                "FAUT",
-                "AMOUR",
-                "TEMPS",
-                "SEXE",
-                "VOLE",
-                "SAIS",
-                "FAIRE",
-                "DANSE",
-                "PAPA",
-                "DIRE",
-                "COEUR",
-                "TOMBER",
-                "BEAU",
-                "POURQUOI",
-                "NUIT",
-                "VEUX",
-                "AIME",
-                "JOUR",
-                "DANSER",
-                "LAISSE",
-                "MOTS",
-                "MONDE",
-                "SOIR",
-                "VIENS",
-                "PEUX",
-                "LOUP",
-                "PEUR",
-                "CIEL",
-                "VENT",
-                "LAID",
-                "DINGUE",
-                "VAIS",
-                "BRAS",
-                "FOND",
-                "SILENCE",
-                "AIMER",
-                "GENS",
-                "CROIS",
-                "HAUT",
-                "APPELLE",
-                "VOIR",
-                "ENTENDS",
-                "GRAND",
-                "TOP"
-        )
-
-        private fun getValue(): String {
-            return possibleValues[Random().nextInt(possibleValues.size)]
         }
     }
 }
