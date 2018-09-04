@@ -9,7 +9,7 @@ import timothee.chabadabada.model.Word
 import timothee.chabadabada.model.dao.WordDao
 
 @Database(entities = arrayOf(Word::class), version = 1)
-abstract class AppDatabase : RoomDatabase() {
+abstract class DatabaseAccessManager : RoomDatabase() {
 
     abstract fun wordDao(): WordDao
 
@@ -27,13 +27,13 @@ abstract class AppDatabase : RoomDatabase() {
 
     companion object {
 
-        private var INSTANCE: AppDatabase? = null
+        private var INSTANCE: DatabaseAccessManager? = null
 
-        fun getInstance(context: Context): AppDatabase? {
+        fun getInstance(context: Context): DatabaseAccessManager? {
             if (INSTANCE == null) {
-                synchronized(AppDatabase::class) {
+                synchronized(DatabaseAccessManager::class) {
                     INSTANCE = Room.databaseBuilder(context.applicationContext,
-                                                    AppDatabase::class.java,
+                                                    DatabaseAccessManager::class.java,
                                                     context.getString(R.string.db_name))
                                    .allowMainThreadQueries()
                                    .build()
