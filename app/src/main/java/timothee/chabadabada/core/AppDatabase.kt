@@ -4,6 +4,7 @@ import android.arch.persistence.room.Database
 import android.arch.persistence.room.Room
 import android.arch.persistence.room.RoomDatabase
 import android.content.Context
+import timothee.chabadabada.R
 import timothee.chabadabada.model.Word
 import timothee.chabadabada.model.dao.WordDao
 
@@ -31,16 +32,14 @@ abstract class AppDatabase : RoomDatabase() {
         fun getInstance(context: Context): AppDatabase? {
             if (INSTANCE == null) {
                 synchronized(AppDatabase::class) {
-                    // TODO go back to real database
-//                    INSTANCE = Room.databaseBuilder(context.applicationContext,
-//                                                    AppDatabase::class.java,
-//                                                    "chabadabada.db")
-//                                   .build()
-                    INSTANCE = Room.inMemoryDatabaseBuilder(context.applicationContext,
-                                                    AppDatabase::class.java).allowMainThreadQueries()
+                    INSTANCE = Room.databaseBuilder(context.applicationContext,
+                                                    AppDatabase::class.java,
+                                                    context.getString(R.string.db_name))
+                                   .allowMainThreadQueries()
                                    .build()
 
                     INSTANCE?.wordDao()?.insert(defaultValues)
+                    INSTANCE?.initialize()
                 }
             }
             return INSTANCE
