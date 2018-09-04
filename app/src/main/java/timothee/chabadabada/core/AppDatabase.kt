@@ -17,7 +17,7 @@ abstract class AppDatabase : RoomDatabase() {
     var count = 0
 
     fun initialize() {
-        values = wordDao()?.getAll().shuffled()
+        values = wordDao().getAll().shuffled()
         count = 0
     }
 
