@@ -6,4 +6,5 @@ interface ISerializable {
 
 interface IDeserializable {
     fun deserialize(json: String): ISerializable
+    fun listDeserialize(json: String): List<ISerializable>
 }

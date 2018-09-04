@@ -21,5 +21,9 @@ class Word(val word: String) : ISerializable {
         override fun deserialize(json: String): Word {
             return Gson().fromJson(json, Word::class.java)
         }
+
+        override fun listDeserialize(json: String): List<ISerializable> {
+            return Gson().fromJson(json, listOf<Word>()::class.java)
+        }
     }
 }
