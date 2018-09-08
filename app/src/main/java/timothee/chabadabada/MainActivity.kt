@@ -6,8 +6,7 @@ import android.os.Bundle
 import android.view.MotionEvent
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
-import timothee.chabadabada.core.DatabaseAccessManager
-import java.util.*
+import timothee.chabadabada.core.WordStreamer
 import kotlin.concurrent.fixedRateTimer
 
 class MainActivity : AppCompatActivity() {
@@ -15,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     var turn: Int = 0
     var nbTurns: Int = 0
     var timer: Int = 0
+    val wordStreamer = WordStreamer(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,8 +46,8 @@ class MainActivity : AppCompatActivity() {
         }
         else {
             main_turn_counter_text.text = "TURN $turn / $nbTurns"
-            main_first_card_text.text = DatabaseAccessManager.getInstance(this)?.getValue()
-            main_second_card_text.text = DatabaseAccessManager.getInstance(this)?.getValue()
+            main_first_card_text.text = wordStreamer.nextValue().word
+            main_second_card_text.text = wordStreamer.nextValue().word
             main_timer_text.visibility = View.GONE
             main_hourglass_button.visibility = View.VISIBLE
         }
