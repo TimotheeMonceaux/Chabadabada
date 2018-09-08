@@ -3,6 +3,7 @@ package timothee.chabadabada.model
 import android.arch.persistence.room.Entity
 import android.arch.persistence.room.PrimaryKey
 import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import timothee.chabadabada.model.interfaces.IDeserializable
 import timothee.chabadabada.model.interfaces.ISerializable
 
@@ -22,8 +23,10 @@ class Word(val word: String) : ISerializable {
             return Gson().fromJson(json, Word::class.java)
         }
 
-        override fun listDeserialize(json: String): List<ISerializable> {
-            return Gson().fromJson(json, listOf<Word>()::class.java)
+        inline fun <reified T> Gson.fromJson(json: String) = this.fromJson<T>(json, object: TypeToken<T>() {}.type)
+
+        override fun listDeserialize(json: String): MutableList<Word> {
+            return Gson().fromJson(json)
         }
     }
 }

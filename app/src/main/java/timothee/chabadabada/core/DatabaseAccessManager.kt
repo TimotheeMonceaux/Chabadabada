@@ -37,8 +37,7 @@ abstract class DatabaseAccessManager : RoomDatabase() {
                                                     context.getString(R.string.db_name))
                                    .allowMainThreadQueries()
                                    .build()
-
-                    INSTANCE?.wordDao()?.insert(defaultValues)
+                    INSTANCE?.wordDao()?.insert(Word.listDeserialize(context.resources.openRawResource(R.raw.word).bufferedReader().use {it.readText()}))
                     INSTANCE?.initialize()
                 }
             }
@@ -48,52 +47,5 @@ abstract class DatabaseAccessManager : RoomDatabase() {
         fun destroyInstance() {
             INSTANCE = null
         }
-
-        private val defaultValues: List<Word> = listOf(
-                Word("FAUT"),
-                Word("AMOUR"),
-                Word("TEMPS"),
-                Word("SEXE"),
-                Word("VOLE"),
-                Word("SAIS"),
-                Word("FAIRE"),
-                Word("DANSE"),
-                Word("PAPA"),
-                Word("DIRE"),
-                Word("COEUR"),
-                Word("TOMBER"),
-                Word("BEAU"),
-                Word("POURQUOI"),
-                Word("NUIT"),
-                Word("VEUX"),
-                Word("AIME"),
-                Word("JOUR"),
-                Word("DANSER"),
-                Word("LAISSE"),
-                Word("MOTS"),
-                Word("MONDE"),
-                Word("SOIR"),
-                Word("VIENS"),
-                Word("PEUX"),
-                Word("LOUP"),
-                Word("PEUR"),
-                Word("CIEL"),
-                Word("VENT"),
-                Word("LAID"),
-                Word("DINGUE"),
-                Word("VAIS"),
-                Word("BRAS"),
-                Word("FOND"),
-                Word("SILENCE"),
-                Word("AIMER"),
-                Word("GENS"),
-                Word("CROIS"),
-                Word("HAUT"),
-                Word("APPELLE"),
-                Word("VOIR"),
-                Word("ENTENDS"),
-                Word("GRAND"),
-                Word("TOP")
-        )
     }
 }
