@@ -13,16 +13,14 @@ abstract class DatabaseAccessManager : RoomDatabase() {
 
     abstract fun wordDao(): WordDao
 
-    var values: List<Word> = listOf()
-    var count = 0
-
-    fun initialize() {
-        values = wordDao().getAll().shuffled()
-        count = 0
+    fun initialize(context: Context) {
+        clearDatabase()
+        wordDao()?.insert(Word.listDeserialize(context.resources.openRawResource(R.raw.word).bufferedReader().use {it.readText()}))
     }
 
-    fun getValue(): String {
-        return values[count++].word
+    private fun clearDatabase(): Boolean {
+        wordDao()?.deleteAll()
+        return true
     }
 
     companion object {
@@ -37,8 +35,7 @@ abstract class DatabaseAccessManager : RoomDatabase() {
                                                     context.getString(R.string.db_name))
                                    .allowMainThreadQueries()
                                    .build()
-                    INSTANCE?.wordDao()?.insert(Word.listDeserialize(context.resources.openRawResource(R.raw.word).bufferedReader().use {it.readText()}))
-                    INSTANCE?.initialize()
+                    INSTANCE?.initialize(context)
                 }
             }
             return INSTANCE
