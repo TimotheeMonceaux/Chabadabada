@@ -6,8 +6,14 @@ import timothee.chabadabada.model.Word
 @Dao
 interface WordDao {
 
+    @Query("SELECT * FROM words LIMIT 1")
+    fun first(): Word
+
     @Query("SELECT * FROM words")
     fun getAll(): List<Word>
+
+    @Query("SELECT COUNT(*) FROM words")
+    fun count(): Int
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insert(word: Word)
