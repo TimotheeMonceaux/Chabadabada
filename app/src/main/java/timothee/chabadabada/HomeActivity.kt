@@ -19,12 +19,19 @@ class HomeActivity : AppCompatActivity() {
 
         // Map the listeners to the  Buttons
         home_start_button.setOnTouchListener(startButtonTouchListener)
+        home_settings_button.setOnTouchListener(settingsButtonTouchListener)
         home_quit_button.setOnTouchListener(quitButtonTouchListener)
     }
 
     private val startButtonTouchListener = View.OnTouchListener { _, event ->
         if (event.action == MotionEvent.ACTION_UP)
             startActivity(Intent(this, MainActivity::class.java))
+        false
+    }
+
+    private val settingsButtonTouchListener = View.OnTouchListener { _, event ->
+        if (event.action == MotionEvent.ACTION_UP)
+            startActivity(Intent(this, SettingsActivity::class.java))
         false
     }
 
