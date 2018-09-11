@@ -7,7 +7,7 @@ import timothee.chabadabada.model.Word
 interface WordDao {
 
     @Query("SELECT * FROM words LIMIT 1")
-    fun first(): Word
+    fun first(): List<Word>
 
     @Query("SELECT * FROM words")
     fun getAll(): List<Word>
