@@ -1,178 +1,222 @@
 [
   {
     "id": 1,
-    "word": "FAUT"
+    "word": "FAUT",
+    "language": "French"
   },
   {
     "id": 2,
-    "word": "AMOUR"
+    "word": "AMOUR",
+    "language": "French"
   },
   {
     "id": 3,
-    "word": "TEMPS"
+    "word": "TEMPS",
+    "language": "French"
   },
   {
     "id": 4,
-    "word": "SEXE"
+    "word": "SEXE",
+    "language": "French"
   },
   {
     "id": 4,
-    "word": "VOLE"
+    "word": "VOLE",
+    "language": "French"
   },
   {
     "id": 5,
-    "word": "SAIS"
+    "word": "SAIS",
+    "language": "French"
   },
   {
     "id": 6,
-    "word": "FAIRE"
+    "word": "FAIRE",
+    "language": "French"
   },
   {
     "id": 7,
-    "word": "DANSE"
+    "word": "DANSE",
+    "language": "French"
   },
   {
     "id": 8,
-    "word": "PAPA"
+    "word": "PAPA",
+    "language": "French"
   },
   {
     "id": 9,
-    "word": "DIRE"
+    "word": "DIRE",
+    "language": "French"
   },
   {
     "id": 10,
-    "word": "COEUR"
+    "word": "COEUR",
+    "language": "French"
   },
   {
     "id": 11,
-    "word": "TOMBER"
+    "word": "TOMBER",
+    "language": "French"
   },
   {
     "id": 12,
-    "word": "BEAU"
+    "word": "BEAU",
+    "language": "French"
   },
   {
     "id": 13,
-    "word": "POURQUOI"
+    "word": "POURQUOI",
+    "language": "French"
   },
   {
     "id": 14,
-    "word": "NUIT"
+    "word": "NUIT",
+    "language": "French"
   },
   {
     "id": 15,
-    "word": "VEUX"
+    "word": "VEUX",
+    "language": "French"
   },
   {
     "id": 16,
-    "word": "AIME"
+    "word": "AIME",
+    "language": "French"
   },
   {
     "id": 17,
-    "word": "JOUR"
+    "word": "JOUR",
+    "language": "French"
   },
   {
     "id": 18,
-    "word": "DANSER"
+    "word": "DANSER",
+    "language": "French"
   },
   {
     "id": 19,
-    "word": "LAISSE"
+    "word": "LAISSE",
+    "language": "French"
   },
   {
     "id": 20,
-    "word": "MOTS"
+    "word": "MOTS",
+    "language": "French"
   },
   {
     "id": 21,
-    "word": "MONDE"
+    "word": "MONDE",
+    "language": "French"
   },
   {
     "id": 22,
-    "word": "SOIR"
+    "word": "SOIR",
+    "language": "French"
   },
   {
     "id": 23,
-    "word": "VIENS"
+    "word": "VIENS",
+    "language": "French"
   },
   {
     "id": 24,
-    "word": "PEUX"
+    "word": "PEUX",
+    "language": "French"
   },
   {
     "id": 25,
-    "word": "LOUP"
+    "word": "LOUP",
+    "language": "French"
   },
   {
     "id": 26,
-    "word": "PEUR"
+    "word": "PEUR",
+    "language": "French"
   },
   {
     "id": 27,
-    "word": "CIEL"
+    "word": "CIEL",
+    "language": "French"
   },
   {
     "id": 28,
-    "word": "VENT"
+    "word": "VENT",
+    "language": "French"
   },
   {
     "id": 29,
-    "word": "LAID"
+    "word": "LAID",
+    "language": "French"
   },
   {
     "id": 30,
-    "word": "DINGUE"
+    "word": "DINGUE",
+    "language": "French"
   },
   {
     "id": 31,
-    "word": "VAIS"
+    "word": "VAIS",
+    "language": "French"
   },
   {
     "id": 32,
-    "word": "BRAS"
+    "word": "BRAS",
+    "language": "French"
   },
   {
     "id": 33,
-    "word": "FOND"
+    "word": "FOND",
+    "language": "French"
   },
   {
     "id": 34,
-    "word": "SILENCE"
+    "word": "SILENCE",
+    "language": "French"
   },
   {
     "id": 35,
-    "word": "AIMER"
+    "word": "AIMER",
+    "language": "French"
   },
   {
     "id": 36,
-    "word": "GENS"
+    "word": "GENS",
+    "language": "French"
   },
   {
     "id": 37,
-    "word": "CROIS"
+    "word": "CROIS",
+    "language": "French"
   },
   {
     "id": 38,
-    "word": "HAUT"
+    "word": "HAUT",
+    "language": "French"
   },
   {
     "id": 39,
-    "word": "APPELLE"
+    "word": "APPELLE",
+    "language": "French"
   },
   {
     "id": 40,
-    "word": "VOIR"
+    "word": "VOIR",
+    "language": "French"
   },
   {
     "id": 41,
-    "word": "ENTENDS"
+    "word": "ENTENDS",
+    "language": "French"
   },
   {
     "id": 42,
-    "word": "GRAND"
+    "word": "GRAND",
+    "language": "French"
   },
   {
     "id": 43,
-    "word": "TOP"
+    "word": "TOP",
+    "language": "French"
   }
 ]
