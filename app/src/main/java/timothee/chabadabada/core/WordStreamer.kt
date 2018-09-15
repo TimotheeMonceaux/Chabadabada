@@ -23,14 +23,14 @@ class WordStreamer private constructor(val context: Context, val language: Langu
     companion object {
         val INSTANCES: MutableMap<Language, WordStreamer?> = mutableMapOf(Language.French to null, Language.English to null)
 
-        fun getInstance(context: Context, language: Language): WordStreamer {
+        fun getInstance(context: Context, language: Language): WordStreamer? {
             // Sanity check on the parameters
             if (!INSTANCES.containsKey(language))
                 throw InvalidParameterException("Trying to access to an non-existing WordStreamer: $language")
 
             if (INSTANCES[language] == null)
                 INSTANCES[language] = WordStreamer(context, language)
-            return INSTANCES[language]!!
+            return INSTANCES[language]
         }
 
         fun destroyInstance(language: Language) {
