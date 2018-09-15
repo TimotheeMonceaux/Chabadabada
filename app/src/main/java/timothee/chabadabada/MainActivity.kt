@@ -7,6 +7,7 @@ import android.view.MotionEvent
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import timothee.chabadabada.core.WordStreamer
+import timothee.chabadabada.model.raw.Language
 import kotlin.concurrent.fixedRateTimer
 
 class MainActivity : AppCompatActivity() {
@@ -14,7 +15,8 @@ class MainActivity : AppCompatActivity() {
     private var turn: Int = 0
     private var nbTurns: Int = 0
     private var timer: Int = 0
-    private val wordStreamer = WordStreamer(this)
+    private val wordStreamerFirstCard = WordStreamer.getInstance(this, Language.French)
+    private val wordStreamerSecondCard = WordStreamer.getInstance(this, Language.French)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,8 +48,8 @@ class MainActivity : AppCompatActivity() {
         }
         else {
             main_turn_counter_text.text = "TURN $turn / ${ if (nbTurns != 0)  nbTurns else "∞"}"
-            main_first_card_text.text = wordStreamer.nextValue().word
-            main_second_card_text.text = wordStreamer.nextValue().word
+            main_first_card_text.text = wordStreamerFirstCard.nextValue().word
+            main_second_card_text.text = wordStreamerSecondCard.nextValue().word
             main_timer_text.visibility = View.GONE
             main_hourglass_button.visibility = View.VISIBLE
         }
