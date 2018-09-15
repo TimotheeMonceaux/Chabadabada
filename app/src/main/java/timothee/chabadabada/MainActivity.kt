@@ -29,12 +29,12 @@ class MainActivity : AppCompatActivity() {
                                                           Language.valueOf(getSharedPreferences(getString(R.string.shared_preferences_settings),
                                                                                                 Context.MODE_PRIVATE)
                                                                                .getString(getString(R.string.shared_preferences_settings_first_card_language),
-                                                                                          "French")!!))
+                                                                                          Language.French.toString())!!))
         wordStreamerSecondCard = WordStreamer.getInstance(this,
                                                           Language.valueOf(getSharedPreferences(getString(R.string.shared_preferences_settings),
                                                                                                  Context.MODE_PRIVATE)
                                                                                .getString(getString(R.string.shared_preferences_settings_first_card_language),
-                                                                                          "French")!!))
+                                                                                          Language.English.toString())!!))
 
         // Set the Layout
         setContentView(R.layout.activity_main)
