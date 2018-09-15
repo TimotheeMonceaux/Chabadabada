@@ -13,8 +13,8 @@ abstract class DatabaseAccessManager : RoomDatabase() {
 
     abstract fun wordDao(): WordDao
 
-    fun initialize(context: Context) {
-        if (wordDao()?.first().isEmpty()) {
+    fun initialize(context: Context, forceRebuildDataBase: Boolean = false) {
+        if (forceRebuildDataBase || wordDao()?.first().isEmpty()) {
             clearDatabase()
             wordDao()?.insert(Word.listDeserialize(context.resources.openRawResource(R.raw.word).bufferedReader().use {it.readText()}))
         }
