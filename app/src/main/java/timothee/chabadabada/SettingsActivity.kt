@@ -36,7 +36,7 @@ class SettingsActivity : AppCompatActivity() {
             override fun onStopTrackingTouch(seekBar: SeekBar) {
                 // Write code to perform some action when touch is stopped.
                 nb_turns = seekBar.progress
-                settings_nturns_editText.text = Editable.Factory.getInstance().newEditable("$nb_turns")
+                settings_nturns_editText.text = Editable.Factory.getInstance().newEditable("${if (nb_turns == 0) "∞" else "$nb_turns"}")
             }
         }))
         settings_nturns_editText.addTextChangedListener(object : TextWatcher {
@@ -48,6 +48,7 @@ class SettingsActivity : AppCompatActivity() {
             }
             override fun afterTextChanged(s: Editable?) {
                 nb_turns = s.toString().toIntOrNull() ?: 0
+                if (nb_turns > settings_nturns_seekBar.max) settings_nturns_seekBar.max = nb_turns
                 settings_nturns_seekBar.progress = nb_turns
             }
 

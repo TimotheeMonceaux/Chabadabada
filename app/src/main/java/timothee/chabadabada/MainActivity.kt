@@ -41,11 +41,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun nextTurn() {
-        if (++turn > nbTurns) {
+        if (++turn > nbTurns && nbTurns > 0) {
             finish()
         }
         else {
-            main_turn_counter_text.text = "TURN $turn / $nbTurns"
+            main_turn_counter_text.text = "TURN $turn / ${ if (nbTurns != 0)  nbTurns else "∞"}"
             main_first_card_text.text = wordStreamer.nextValue().word
             main_second_card_text.text = wordStreamer.nextValue().word
             main_timer_text.visibility = View.GONE
