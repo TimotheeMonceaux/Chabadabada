@@ -11,10 +11,10 @@ import kotlin.concurrent.fixedRateTimer
 
 class MainActivity : AppCompatActivity() {
 
-    var turn: Int = 0
-    var nbTurns: Int = 0
-    var timer: Int = 0
-    val wordStreamer = WordStreamer(this)
+    private var turn: Int = 0
+    private var nbTurns: Int = 0
+    private var timer: Int = 0
+    private val wordStreamer = WordStreamer(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
