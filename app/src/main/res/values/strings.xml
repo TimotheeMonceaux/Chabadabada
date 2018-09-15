@@ -15,4 +15,5 @@
 
     <!-- SETTINGS ACTIVITY -->
     <string name="settings_save_button">SAVE</string>
+    <string name="settings_nturns_editText_default">10</string>
 </resources>
