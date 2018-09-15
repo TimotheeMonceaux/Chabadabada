@@ -1,222 +1,502 @@
 [
   {
     "id": 1,
-    "word": "FAUT",
+    "word": "AIMER (+conj)",
     "language": "French"
   },
   {
     "id": 2,
-    "word": "AMOUR",
+    "word": "ALLER (+conj)",
     "language": "French"
   },
   {
     "id": 3,
-    "word": "TEMPS",
+    "word": "AMOUR",
     "language": "French"
   },
   {
     "id": 4,
-    "word": "SEXE",
-    "language": "French"
-  },
-  {
-    "id": 4,
-    "word": "VOLE",
+    "word": "APPELLER (+conj)",
     "language": "French"
   },
   {
     "id": 5,
-    "word": "SAIS",
+    "word": "ARBRE",
     "language": "French"
   },
   {
     "id": 6,
-    "word": "FAIRE",
+    "word": "BATEAU",
     "language": "French"
   },
   {
     "id": 7,
-    "word": "DANSE",
-    "language": "French"
-  },
-  {
-    "id": 8,
-    "word": "PAPA",
-    "language": "French"
-  },
-  {
-    "id": 9,
-    "word": "DIRE",
-    "language": "French"
-  },
-  {
-    "id": 10,
-    "word": "COEUR",
-    "language": "French"
-  },
-  {
-    "id": 11,
-    "word": "TOMBER",
-    "language": "French"
-  },
-  {
-    "id": 12,
     "word": "BEAU",
     "language": "French"
   },
   {
-    "id": 13,
-    "word": "POURQUOI",
+    "id": 8,
+    "word": "BLANC",
     "language": "French"
   },
   {
-    "id": 14,
-    "word": "NUIT",
-    "language": "French"
-  },
-  {
-    "id": 15,
-    "word": "VEUX",
-    "language": "French"
-  },
-  {
-    "id": 16,
-    "word": "AIME",
-    "language": "French"
-  },
-  {
-    "id": 17,
-    "word": "JOUR",
-    "language": "French"
-  },
-  {
-    "id": 18,
-    "word": "DANSER",
-    "language": "French"
-  },
-  {
-    "id": 19,
-    "word": "LAISSE",
-    "language": "French"
-  },
-  {
-    "id": 20,
-    "word": "MOTS",
-    "language": "French"
-  },
-  {
-    "id": 21,
-    "word": "MONDE",
-    "language": "French"
-  },
-  {
-    "id": 22,
-    "word": "SOIR",
-    "language": "French"
-  },
-  {
-    "id": 23,
-    "word": "VIENS",
-    "language": "French"
-  },
-  {
-    "id": 24,
-    "word": "PEUX",
-    "language": "French"
-  },
-  {
-    "id": 25,
-    "word": "LOUP",
-    "language": "French"
-  },
-  {
-    "id": 26,
-    "word": "PEUR",
-    "language": "French"
-  },
-  {
-    "id": 27,
-    "word": "CIEL",
-    "language": "French"
-  },
-  {
-    "id": 28,
-    "word": "VENT",
-    "language": "French"
-  },
-  {
-    "id": 29,
-    "word": "LAID",
-    "language": "French"
-  },
-  {
-    "id": 30,
-    "word": "DINGUE",
-    "language": "French"
-  },
-  {
-    "id": 31,
-    "word": "VAIS",
-    "language": "French"
-  },
-  {
-    "id": 32,
+    "id": 9,
     "word": "BRAS",
     "language": "French"
   },
   {
-    "id": 33,
+    "id": 10,
+    "word": "CIEL",
+    "language": "French"
+  },
+  {
+    "id": 11,
+    "word": "COEUR",
+    "language": "French"
+  },
+  {
+    "id": 12,
+    "word": "COMME",
+    "language": "French"
+  },
+  {
+    "id": 13,
+    "word": "CROIRE (+conj)",
+    "language": "French"
+  },
+  {
+    "id": 14,
+    "word": "DANSER (+conj)",
+    "language": "French"
+  },
+  {
+    "id": 15,
+    "word": "DINGUE",
+    "language": "French"
+  },
+  {
+    "id": 16,
+    "word": "DIRE (+conj)",
+    "language": "French"
+  },
+  {
+    "id": 17,
+    "word": "ENTENDRE (+conj)",
+    "language": "French"
+  },
+  {
+    "id": 18,
+    "word": "ETOILE, ETOILES",
+    "language": "French"
+  },
+  {
+    "id": 19,
+    "word": "FAIRE (+conj)",
+    "language": "French"
+  },
+  {
+    "id": 20,
+    "word": "FALLOIR (+conj)",
+    "language": "French"
+  },
+  {
+    "id": 21,
     "word": "FOND",
     "language": "French"
   },
   {
-    "id": 34,
-    "word": "SILENCE",
-    "language": "French"
-  },
-  {
-    "id": 35,
-    "word": "AIMER",
-    "language": "French"
-  },
-  {
-    "id": 36,
+    "id": 22,
     "word": "GENS",
     "language": "French"
   },
   {
-    "id": 37,
-    "word": "CROIS",
-    "language": "French"
-  },
-  {
-    "id": 38,
-    "word": "HAUT",
-    "language": "French"
-  },
-  {
-    "id": 39,
-    "word": "APPELLE",
-    "language": "French"
-  },
-  {
-    "id": 40,
-    "word": "VOIR",
-    "language": "French"
-  },
-  {
-    "id": 41,
-    "word": "ENTENDS",
-    "language": "French"
-  },
-  {
-    "id": 42,
+    "id": 23,
     "word": "GRAND",
     "language": "French"
   },
   {
-    "id": 43,
-    "word": "TOP",
+    "id": 24,
+    "word": "HAUT",
     "language": "French"
+  },
+  {
+    "id": 25,
+    "word": "JOUR",
+    "language": "French"
+  },
+  {
+    "id": 26,
+    "word": "JOUR",
+    "language": "French"
+  },
+  {
+    "id": 27,
+    "word": "LAID",
+    "language": "French"
+  },
+  {
+    "id": 28,
+    "word": "LAISSER (+conj)",
+    "language": "French"
+  },
+  {
+    "id": 29,
+    "word": "MONDE",
+    "language": "French"
+  },
+  {
+    "id": 30,
+    "word": "MONDE",
+    "language": "French"
+  },
+  {
+    "id": 31,
+    "word": "MOTS",
+    "language": "French"
+  },
+  {
+    "id": 32,
+    "word": "NOIR",
+    "language": "French"
+  },
+  {
+    "id": 33,
+    "word": "NUIT",
+    "language": "French"
+  },
+  {
+    "id": 34,
+    "word": "NUIT",
+    "language": "French"
+  },
+  {
+    "id": 35,
+    "word": "PAPA",
+    "language": "French"
+  },
+  {
+    "id": 36,
+    "word": "PEUR",
+    "language": "French"
+  },
+  {
+    "id": 37,
+    "word": "PLUS",
+    "language": "French"
+  },
+  {
+    "id": 38,
+    "word": "POURQUOI",
+    "language": "French"
+  },
+  {
+    "id": 39,
+    "word": "POUVOIR (+conj)",
+    "language": "French"
+  },
+  {
+    "id": 40,
+    "word": "SAVOIR (+conj)",
+    "language": "French"
+  },
+  {
+    "id": 41,
+    "word": "SEXE",
+    "language": "French"
+  },
+  {
+    "id": 42,
+    "word": "SILENCE",
+    "language": "French"
+  },
+  {
+    "id": 43,
+    "word": "SOIR",
+    "language": "French"
+  },
+  {
+    "id": 44,
+    "word": "TEMPS",
+    "language": "French"
+  },
+  {
+    "id": 45,
+    "word": "TOMBER (+conj)",
+    "language": "French"
+  },
+  {
+    "id": 46,
+    "word": "VENIR (+conj)",
+    "language": "French"
+  },
+  {
+    "id": 47,
+    "word": "VENT",
+    "language": "French"
+  },
+  {
+    "id": 48,
+    "word": "VOIR (+conj)",
+    "language": "French"
+  },
+  {
+    "id": 49,
+    "word": "VOLER (+conj)",
+    "language": "French"
+  },
+  {
+    "id": 50,
+    "word": "VOULOIR (+conj)",
+    "language": "French"
+  },
+  {
+    "id": 51,
+    "word": "AGAIN",
+    "language": "English"
+  },
+  {
+    "id": 52,
+    "word": "AROUND",
+    "language": "English"
+  },
+  {
+    "id": 53,
+    "word": "AWAY",
+    "language": "English"
+  },
+  {
+    "id": 54,
+    "word": "BABY",
+    "language": "English"
+  },
+  {
+    "id": 55,
+    "word": "BACK",
+    "language": "English"
+  },
+  {
+    "id": 56,
+    "word": "BECAUSE",
+    "language": "English"
+  },
+  {
+    "id": 57,
+    "word": "CRAZY",
+    "language": "English"
+  },
+  {
+    "id": 58,
+    "word": "DAY",
+    "language": "English"
+  },
+  {
+    "id": 59,
+    "word": "DIE, DEAD",
+    "language": "English"
+  },
+  {
+    "id": 60,
+    "word": "DON'T",
+    "language": "English"
+  },
+  {
+    "id": 61,
+    "word": "DOWN",
+    "language": "English"
+  },
+  {
+    "id": 62,
+    "word": "DREAM",
+    "language": "English"
+  },
+  {
+    "id": 63,
+    "word": "EYE",
+    "language": "English"
+  },
+  {
+    "id": 64,
+    "word": "FALL",
+    "language": "English"
+  },
+  {
+    "id": 65,
+    "word": "FEEL, FELT",
+    "language": "English"
+  },
+  {
+    "id": 66,
+    "word": "FOUL",
+    "language": "English"
+  },
+  {
+    "id": 67,
+    "word": "GIRL, GIRLS",
+    "language": "English"
+  },
+  {
+    "id": 68,
+    "word": "GIVE, GIVEN",
+    "language": "English"
+  },
+  {
+    "id": 69,
+    "word": "GO, WENT",
+    "language": "English"
+  },
+  {
+    "id": 70,
+    "word": "GONNA, GOING TO",
+    "language": "English"
+  },
+  {
+    "id": 71,
+    "word": "GOOD",
+    "language": "English"
+  },
+  {
+    "id": 72,
+    "word": "HEART",
+    "language": "English"
+  },
+  {
+    "id": 73,
+    "word": "HOME",
+    "language": "English"
+  },
+  {
+    "id": 74,
+    "word": "KEEP, KEPT",
+    "language": "English"
+  },
+  {
+    "id": 75,
+    "word": "KISS",
+    "language": "English"
+  },
+  {
+    "id": 76,
+    "word": "LIFE",
+    "language": "English"
+  },
+  {
+    "id": 77,
+    "word": "LITTLE",
+    "language": "English"
+  },
+  {
+    "id": 78,
+    "word": "LIVE",
+    "language": "English"
+  },
+  {
+    "id": 79,
+    "word": "LONELY",
+    "language": "English"
+  },
+  {
+    "id": 80,
+    "word": "LOOK",
+    "language": "English"
+  },
+  {
+    "id": 81,
+    "word": "LOVE",
+    "language": "English"
+  },
+  {
+    "id": 82,
+    "word": "MAN, MEN",
+    "language": "English"
+  },
+  {
+    "id": 83,
+    "word": "MAY, MIGHT",
+    "language": "English"
+  },
+  {
+    "id": 84,
+    "word": "MIND",
+    "language": "English"
+  },
+  {
+    "id": 85,
+    "word": "MONEY",
+    "language": "English"
+  },
+  {
+    "id": 86,
+    "word": "NEVER",
+    "language": "English"
+  },
+  {
+    "id": 87,
+    "word": "NIGHT",
+    "language": "English"
+  },
+  {
+    "id": 88,
+    "word": "OVER",
+    "language": "English"
+  },
+  {
+    "id": 89,
+    "word": "RAIN, RAINBOW",
+    "language": "English"
+  },
+  {
+    "id": 90,
+    "word": "RIGHT",
+    "language": "English"
+  },
+  {
+    "id": 91,
+    "word": "SAD",
+    "language": "English"
+  },
+  {
+    "id": 92,
+    "word": "SEX, SEXY",
+    "language": "English"
+  },
+  {
+    "id": 93,
+    "word": "SMILE",
+    "language": "English"
+  },
+  {
+    "id": 94,
+    "word": "TAKE, TOOK",
+    "language": "English"
+  },
+  {
+    "id": 95,
+    "word": "THINK, THOUGHT",
+    "language": "English"
+  },
+  {
+    "id": 96,
+    "word": "TIME",
+    "language": "English"
+  },
+  {
+    "id": 97,
+    "word": "WANT, WANTED",
+    "language": "English"
+  },
+  {
+    "id": 98,
+    "word": "WE, US",
+    "language": "English"
+  },
+  {
+    "id": 99,
+    "word": "WORLD",
+    "language": "English"
+  },
+  {
+    "id": 100,
+    "word": "YOU",
+    "language": "English"
   }
 ]
