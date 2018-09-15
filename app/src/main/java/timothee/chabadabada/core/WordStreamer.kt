@@ -12,7 +12,7 @@ class WordStreamer private constructor(val context: Context, val language: Langu
 
     private fun getIterator(): Iterator<Word> = buildIterator{
         while (true) {
-            yieldAll(DatabaseAccessManager.getInstance(context)?.wordDao()?.getAll()?.shuffled()?.iterator()!!)
+            yieldAll(DatabaseAccessManager.getInstance(context)?.wordDao()?.getAllFilteredByLanguage(language.toString())?.shuffled()?.iterator()!!)
         }
     }
 

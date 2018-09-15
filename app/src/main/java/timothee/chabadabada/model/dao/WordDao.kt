@@ -2,6 +2,7 @@ package timothee.chabadabada.model.dao
 
 import android.arch.persistence.room.*
 import timothee.chabadabada.model.Word
+import timothee.chabadabada.model.raw.Language
 
 @Dao
 interface WordDao {
@@ -11,6 +12,9 @@ interface WordDao {
 
     @Query("SELECT * FROM words")
     fun getAll(): List<Word>
+
+    @Query("SELECT * FROM words WHERE language = :language")
+    fun getAllFilteredByLanguage(language: String): List<Word>
 
     @Query("SELECT COUNT(*) FROM words")
     fun count(): Int
