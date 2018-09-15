@@ -1,14 +1,16 @@
 package timothee.chabadabada.model
 
 import android.arch.persistence.room.Entity
+import android.arch.persistence.room.Ignore
 import android.arch.persistence.room.PrimaryKey
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import timothee.chabadabada.model.interfaces.IDeserializable
 import timothee.chabadabada.model.interfaces.ISerializable
+import timothee.chabadabada.model.raw.Language
 
 @Entity(tableName = "words")
-class Word(val word: String) : ISerializable {
+class Word(val word: String, val language: String = "English") : ISerializable {
 
     @PrimaryKey(autoGenerate = true)
     var id: Long = 0
