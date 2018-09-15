@@ -22,6 +22,9 @@ class SettingsActivity : AppCompatActivity() {
         // Initialize the widgets with default values
         nb_turns = getSharedPreferences(getString(R.string.shared_preferences_settings), Context.MODE_PRIVATE)
                 .getInt(getString(R.string.shared_preferences_settings_number_of_rounds),10)
+        settings_nturns_editText.text = Editable.Factory.getInstance().newEditable("${if (nb_turns == 0) "∞" else "$nb_turns"}")
+        if (nb_turns > settings_nturns_seekBar.max) settings_nturns_seekBar.max = nb_turns
+        settings_nturns_seekBar.progress = nb_turns
 
         // Map the listeners to the Widgets
         settings_nturns_seekBar.setOnSeekBarChangeListener((object : SeekBar.OnSeekBarChangeListener {
@@ -62,7 +65,7 @@ class SettingsActivity : AppCompatActivity() {
                 putInt(getString(R.string.shared_preferences_settings_number_of_rounds), nb_turns)
                 commit()
             }
-            startActivity(Intent(this, HomeActivity::class.java))
+            finish()
         }
         false
     }
