@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         wordStreamerSecondCard = WordStreamer.getInstance(this,
                                                           Language.valueOf(getSharedPreferences(getString(R.string.shared_preferences_settings),
                                                                                                  Context.MODE_PRIVATE)
-                                                                               .getString(getString(R.string.shared_preferences_settings_first_card_language),
+                                                                               .getString(getString(R.string.shared_preferences_settings_second_card_language),
                                                                                           Language.English.toString())!!))
 
         // Set the Layout
