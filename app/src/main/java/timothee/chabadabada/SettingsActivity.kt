@@ -10,6 +10,7 @@ import android.view.MotionEvent
 import android.view.View
 import android.widget.SeekBar
 import kotlinx.android.synthetic.main.activity_settings.*
+import timothee.chabadabada.model.raw.Language
 
 class SettingsActivity : AppCompatActivity() {
 
@@ -56,6 +57,22 @@ class SettingsActivity : AppCompatActivity() {
             }
 
         })
+
+        if (getSharedPreferences(getString(R.string.shared_preferences_settings), Context.MODE_PRIVATE)
+                        .getString(getString(R.string.shared_preferences_settings_first_card_language), Language.French.toString()) == Language.French.toString())
+            settings_radioGroup_firstCard.check(settings_radioButton_frenchFirstCard.id)
+        else if (getSharedPreferences(getString(R.string.shared_preferences_settings), Context.MODE_PRIVATE)
+                        .getString(getString(R.string.shared_preferences_settings_first_card_language), Language.French.toString()) == Language.English.toString())
+            settings_radioGroup_firstCard.check(settings_radioButton_englishFirstCard.id)
+
+        if (getSharedPreferences(getString(R.string.shared_preferences_settings), Context.MODE_PRIVATE)
+                        .getString(getString(R.string.shared_preferences_settings_second_card_language), Language.English.toString()) == Language.French.toString())
+            settings_radioGroup_secondCard.check(settings_radioButton_frenchSecondCard.id)
+        else if (getSharedPreferences(getString(R.string.shared_preferences_settings), Context.MODE_PRIVATE)
+                        .getString(getString(R.string.shared_preferences_settings_first_card_language), Language.English.toString()) == Language.English.toString())
+            settings_radioGroup_secondCard.check(settings_radioButton_englishSecondCard.id)
+
+
         settings_save_button.setOnTouchListener(saveButtonTouchListener)
     }
 
@@ -63,6 +80,18 @@ class SettingsActivity : AppCompatActivity() {
         if (event.action == MotionEvent.ACTION_UP) {
             with (getSharedPreferences(getString(R.string.shared_preferences_settings), Context.MODE_PRIVATE).edit()) {
                 putInt(getString(R.string.shared_preferences_settings_number_of_rounds), nb_turns)
+
+                if (settings_radioButton_frenchFirstCard.isChecked)
+                    putString(getString(R.string.shared_preferences_settings_first_card_language), Language.French.toString())
+                else if (settings_radioButton_englishFirstCard.isChecked)
+                    putString(getString(R.string.shared_preferences_settings_first_card_language), Language.English.toString())
+
+                if (settings_radioButton_frenchSecondCard.isChecked)
+                    putString(getString(R.string.shared_preferences_settings_second_card_language), Language.French.toString())
+                else if (settings_radioButton_englishSecondCard.isChecked)
+                    putString(getString(R.string.shared_preferences_settings_second_card_language), Language.English.toString())
+
+
                 commit()
             }
             finish()
